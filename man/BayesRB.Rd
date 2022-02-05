@@ -25,7 +25,7 @@ beta_initial: \tab a vector containing the intial value of the grant mean and th
 BayesRB is used for SNP effect estimation and genetic risk prediction
 }
 \author{
-Ying Shan <yis29@pitt.edu>, Daniel E. Weeks <weeks@pitt.edu>
+Ying Shan <sylvia.shanboo@gmail.com>, Daniel E. Weeks <weeks@pitt.edu>
 }
 \seealso{
 This package is based on the R package \code{\link[Rcpp]{Rcpp}} and the c++ library \code{\link[gsl]{gsl}}
