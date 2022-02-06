@@ -28,9 +28,9 @@ BayesRB is used for SNP effect estimation and genetic risk prediction
 Ying Shan <sylvia.shanboo@gmail.com>, Daniel E. Weeks <weeks@pitt.edu>
 }
 \seealso{
-This package is based on the R package \code{\link[Rcpp]{Rcpp}} and the c++ library \code{\link[gsl]{gsl}}
-
-Moser, G., Lee, S. H., Hayes, B. J., Goddard, M. E., Wray, N. R. and Visscher, P. M. (2015). Simultaneous discovery, estimation and prediction analysis of complex traits using a bayesian mixture model. PLoS genetics 11, e1004969.
+This package is based on the R package \code{\link[Rcpp]{Rcpp}} and the c++ library \code{\link[gsl]{gsl}} \cr
+Mollandin F, Rau A, Croiseau P. An evaluation of the predictive performance and mapping power of the BayesR model for genomic prediction. G3 (Bethesda). 2021 Oct 19;11(11):jkab225. doi: 10.1093/g3journal/jkab225. PMID: 34849780; PMCID: PMC8527474. \cr
+Moser G, Lee SH, Hayes BJ, Goddard ME, Wray NR, Visscher PM. Simultaneous discovery, estimation and prediction analysis of complex traits using a bayesian mixture model. PLoS Genet. 2015 Apr 7;11(4):e1004969. doi: 10.1371/journal.pgen.1004969. PMID: 25849665; PMCID: PMC4388571. \cr
 }
 \examples{
 library(BayesRB)
