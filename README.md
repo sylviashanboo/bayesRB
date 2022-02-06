@@ -17,7 +17,7 @@ R CMD INSTALL BayesRB_1.0.tar.gz
 **Note**: You may be asked to download and install GNU Scientific Library (gsl) for C++ program. 
 
 For MacOSX users:
-Download gsl-latest.tar.gz from the [GSL ftp site](https://www.gnu.org/software/gsl/) or [this bayesRB GitHub site](https://github.com/sylviashanboo/bayesRB/) and unzip it anywhere (e.g. /Downloads)
+Download gsl-latest.tar.gz from the [GSL ftp site](https://www.gnu.org/software/gsl/) or [this bayesRB GitHub site](https://github.com/sylviashanboo/bayesRB/tree/main/appendix%20files) and unzip it anywhere (e.g. /Downloads)
 
 Open the unzipped gsl folder in Terminal (e.g. cd ~/Downloads/gsl-2.7.1)
 ```
