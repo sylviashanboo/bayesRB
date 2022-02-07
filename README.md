@@ -32,6 +32,8 @@ For other users:
 check [this website](https://gist.github.com/TysonRayJones/af7bedcdb8dc59868c7966232b4da903) for instructions.
 
 
+## Citation
+Shan, Y., 2016. Statistical methods for genetic risk confidence intervals, Bayesian disease risk prediction, and estimating mutation screening saturation (Doctoral dissertation, University of Pittsburgh).
 
 ## Contact
 Ying Shan, PhD
