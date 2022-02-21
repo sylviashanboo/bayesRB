@@ -16,13 +16,23 @@ seed: \tab an integer. \cr
 MCMC_iteration: \tab the number of MCMC interations. It should be an integer.\cr
 burn_iteration: \tab the number of interations as warming up. It should be an integer.\cr
 thin_value: \tab thin value. It should be an integer.\cr
-X: \tab a n*p matrix with n samples and p variables.\cr
-Y: \tab a vector with length of n, where n is the sample size. Y=1 indicates a case, otherwise a control.\cr
-beta_initial: \tab a vector containing the intial value of the grant mean and the SNP effects. grant mean goes first. SNP order stays the same as the columns of X matrix.
+X: \tab a n rows x p columns matrix with n samples and p SNPs. For each SNP, the numbers of risk alleles are standardized as Norm(0,1). \cr
+Y: \tab a vector with length of n, where n is the sample size. Y = 1 indicates a case, otherwise a control.\cr
+beta_initial: \tab a vector containing the initial values of the grand mean and the SNP effects. grand mean goes first. SNP order stays the same as the columns of X matrix.
 }
 }
 \details{
 BayesRB is used for SNP effect estimation and genetic risk prediction
+}
+\value{
+r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin.\cr
+r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each MCMC loop after burn-in and thin.\cr
+r_lambda:\tab the estimated lambda parameter for each sample in each MCMC loop after burn-in and thin.\cr
+r_Z:\tab the estimated auxiliary variable Z for each sample in each MCMC loop after burn-in and thin.\cr
+r_mu:\tab the estimated grand mean variable mu in each MCMC loop after burn-in and thin.\cr
+r_sigma2:\tab the estimated genetic variance sigma2 in each MCMC loop after burn-in and thin.\cr
+r_pi:\tab the estimated mixture proportions pi1-pi4 in each MCMC loop after burn-in and thin. \cr
+r_m:\tab the estimated SNPs being in the category 1-4 in each MCMC loop after burn-in and thin. \cr
 }
 \author{
 Ying Shan <sylvia.shanboo@gmail.com>, Daniel E. Weeks <weeks@pitt.edu>
@@ -36,12 +46,9 @@ Moser G, Lee SH, Hayes BJ, Goddard ME, Wray NR, Visscher PM. Simultaneous discov
 }
 \examples{
 library(BayesRB)
-library(Rcpp)
 
 #The following libraries are used for constructing the dataset 
-library(mgrp)
 library(faraway)
-source('mod_SimulateGenotypes.R')
 library(methods)
 
 sample.size <- 1000
