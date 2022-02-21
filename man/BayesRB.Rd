@@ -89,6 +89,9 @@ burn_in_num = 1000
 thin_num= 50
 
 result <- BayesRB(123, mcmc_all, burn_in_num, thin_num, x, y, beta_init)
-
+#PRS:
+est_Z = mean(result$r_mu) + x%*%apply(result$r_beta,2,mean)
+#The probability of being a case:
+prs_hat = apply(est_Z,1,ilogit)
 
 }
