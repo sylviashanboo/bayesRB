@@ -18,7 +18,7 @@ burn_iteration: \tab the number of iterations as warming up. It should be an int
 thin_value: \tab thin value. It should be an integer.\cr
 X: \tab a n rows x p columns matrix with n samples and p SNPs. For each SNP, the numbers of risk alleles are standardized as Norm(0,1). \cr
 Y: \tab a vector with length of n, where n is the sample size. Y = 1 indicates a case, otherwise a control.\cr
-beta_initial: \tab a vector containing the initial values of the grand mean and the SNP effects. grand mean goes first. SNP order stays the same as the columns of X matrix.
+beta_initial: \tab a vector with length p+1, containing the initial values of the grand mean and the SNP effects.The initial value of the grand mean goes first, followed by the initial values of the SNP effects. SNP order stays the same as the columns in the X matrix.\cr
 }
 }
 \details{
