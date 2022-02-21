@@ -25,6 +25,7 @@ beta_initial: \tab a vector containing the initial values of the grand mean and 
 BayesRB is used for SNP effect estimation and genetic risk prediction
 }
 \value{
+\tabular{ll}{
 r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin.\cr
 r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each MCMC loop after burn-in and thin.\cr
 r_lambda:\tab the estimated lambda parameter for each sample in each MCMC loop after burn-in and thin.\cr
@@ -33,6 +34,7 @@ r_mu:\tab the estimated grand mean variable mu in each MCMC loop after burn-in a
 r_sigma2:\tab the estimated genetic variance sigma2 in each MCMC loop after burn-in and thin.\cr
 r_pi:\tab the estimated mixture proportions pi1-pi4 in each MCMC loop after burn-in and thin. \cr
 r_m:\tab the estimated SNPs being in the category 1-4 in each MCMC loop after burn-in and thin. \cr
+}
 }
 \author{
 Ying Shan <sylvia.shanboo@gmail.com>, Daniel E. Weeks <weeks@pitt.edu>
