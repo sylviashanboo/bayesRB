@@ -29,7 +29,6 @@ install_github("sylviashanboo/bayesRB")
 
 ```
 library(BayesRB)
-browseVignettes("BayesRB")
 ```
 
 # Data Format
