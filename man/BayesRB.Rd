@@ -24,7 +24,7 @@ beta_initial: \tab a vector with length p+1, containing the initial values of th
 \details{
 BayesRB is used for SNP effect estimation and genetic risk prediction
 }
-\value{
+\Values{
 \tabular{ll}{
 r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin (valid MCMC loop). The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
 r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each valid MCMC loop. The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
