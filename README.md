@@ -25,7 +25,7 @@ library(devtools)
 install_github("sylviashanboo/bayesRB")
 ```
 
-4. After the `BayesRB` R package has been installed, you can view this vignette by issuing these commands at the R prompt:
+4. After the `BayesRB` R package has been installed, you can start use the package:
 
 ```
 library(BayesRB)
