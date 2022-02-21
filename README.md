@@ -39,8 +39,8 @@ library(BayesRB)
 * burn_iteration: the number of interations as warming up. It should be an integer.
 * thin_value: thin value. It should be an integer.
 * X: the genotype file. It is an N rows x P columns matrix with N samples and P SNPs.
-* Y: the phenotype file. It is a vector of length N. Again N is the sample size. Y = 1 indicates a case, otherwise a control.
-* beta_initial: a vector with length p+1, containing the initial values of the grand mean and the SNP effects.The initial value of the grand mean goes first, followed by the initial values of the SNP effects. SNP order stays the same as the columns in the X matrix.
+* Y: the phenotype file. It is a vector a length of N. Again N is the sample size. Y = 1 indicates a case, otherwise a control.
+* beta_initial: a vector with a length of P+1.The initial value of the grand mean goes first, followed by the initial values of the P SNP effects. SNP order stays the same as the columns in the X matrix.
 
 ## The genotype file
 The X matrix described above is the genotype file. It is an n rows x p columns matrix with N samples and P SNPs. For each SNP, the numbers of risk alleles are standardized as Norm(0,1).
@@ -49,7 +49,7 @@ The X matrix described above is the genotype file. It is an n rows x p columns m
 The Y matrix described above is the phenotype file. It's a vector with N elements, which indicate the disease status (0,1) of the N samples. 
 
 # How to Run the Program
-The main functions in this package which implement the statistics described in Shan et al. (2022, 2016):
+The main functions in this package which implement the statistics described in Shan et al. (2022):
 
 `BayesRB`
 
