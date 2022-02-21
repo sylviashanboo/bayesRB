@@ -19,13 +19,16 @@ install.packages("devtools")
 library(devtools)
 ```
 
-3. Install the `BayesRB` R package from the github repository via this command:
+3. Install the RccpGSL.
+
+
+4. Install the `BayesRB` R package from the github repository via this command:
 
 ```
 install_github("sylviashanboo/bayesRB")
 ```
 
-4. After the `BayesRB` R package has been installed, you can start use the package:
+5. After the `BayesRB` R package has been installed, you can start use the package:
 
 ```
 library(BayesRB)
