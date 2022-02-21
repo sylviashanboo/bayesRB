@@ -24,7 +24,7 @@ beta_initial: \tab a vector with length p+1, containing the initial values of th
 \details{
 BayesRB is used for SNP effect estimation and genetic risk prediction
 }
-\Values{
+\value{
 \tabular{ll}{
 r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin (valid MCMC loop). The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
 r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each valid MCMC loop. The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
@@ -90,7 +90,7 @@ thin_num= 50
 
 result <- BayesRB(123, mcmc_all, burn_in_num, thin_num, x, y, beta_init)
 #PRS:
-est_Z = mean(result$r_mu) + x%*%apply(result$r_beta,2,mean)
+est_Z = mean(result$r_mu) + x\%*\%apply(result$r_beta,2,mean)
 #The probability of being a case:
 prs_hat = apply(est_Z,1,ilogit)
 
