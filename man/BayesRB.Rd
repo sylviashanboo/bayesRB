@@ -26,14 +26,14 @@ BayesRB is used for SNP effect estimation and genetic risk prediction
 }
 \value{
 \tabular{ll}{
-r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin.\cr
-r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each MCMC loop after burn-in and thin.\cr
-r_lambda:\tab the estimated lambda parameter for each sample in each MCMC loop after burn-in and thin.\cr
-r_Z:\tab the estimated auxiliary variable Z for each sample in each MCMC loop after burn-in and thin.\cr
-r_mu:\tab the estimated grand mean variable mu in each MCMC loop after burn-in and thin.\cr
-r_sigma2:\tab the estimated genetic variance sigma2 in each MCMC loop after burn-in and thin.\cr
-r_pi:\tab the estimated mixture proportions pi1-pi4 in each MCMC loop after burn-in and thin. \cr
-r_m:\tab the estimated SNPs being in the category 1-4 in each MCMC loop after burn-in and thin. \cr
+r_beta: \tab the estimated coefficients of all the SNPs in each MCMC loop after burn-in and thin (valid MCMC loop). The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
+r_bj: \tab the variance groups (1-4) to which the SNPs are estimated to belong in each valid MCMC loop. The matrix contains I rows and P columns, where I is the number of valid MCMC loops, and P is the number of SNPs.\cr
+r_lambda:\tab the estimated lambda parameter for each sample in each valid MCMC loop.The matrix contains I rows and N columns, where I is the number of valid MCMC loops, and N is the number of samples.\cr
+r_Z:\tab the estimated auxiliary variable Z for each sample in each valid MCMC loop.The matrix contains I rows and N columns, where I is the number of valid MCMC loops, and N is the number of samples.\cr
+r_mu:\tab the estimated grand mean variable mu in each valid MCMC loop.\cr
+r_sigma2:\tab the estimated genetic variance sigma2 in each valid MCMC loop.\cr
+r_pi:\tab the estimated mixture proportions pi1-pi4 in each valid MCMC loop. The matrix contains I rows and 4 columns, where I is the number of valid MCMC loops.\cr
+r_m:\tab the estimated SNPs being in the category 1-4 in each valid MCMC loop. The matrix contains I rows and 4 columns, where I is the number of valid MCMC loops.\cr
 }
 }
 \author{
