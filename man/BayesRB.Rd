@@ -13,8 +13,8 @@ BayesRB(seed, MCMC_iteration, burn_iteration, thin_value, X, Y, beta_initial)
 \arguments{
 \tabular{ll}{
 seed: \tab an integer. \cr
-MCMC_iteration: \tab the number of MCMC interations. It should be an integer.\cr
-burn_iteration: \tab the number of interations as warming up. It should be an integer.\cr
+MCMC_iteration: \tab the number of MCMC iterations. It should be an integer.\cr
+burn_iteration: \tab the number of iterations as warming up. It should be an integer.\cr
 thin_value: \tab thin value. It should be an integer.\cr
 X: \tab a n rows x p columns matrix with n samples and p SNPs. For each SNP, the numbers of risk alleles are standardized as Norm(0,1). \cr
 Y: \tab a vector with length of n, where n is the sample size. Y = 1 indicates a case, otherwise a control.\cr
