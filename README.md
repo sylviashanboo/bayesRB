@@ -9,10 +9,7 @@ install.packages("devtools")
 library(devtools)
 devtools::install_github("sylviashanboo/bayesRB")
 ```
-Or
-```
-R CMD INSTALL BayesRB_1.0.tar.gz
-```
+
 
 **Note**: You may be asked to download and install GNU Scientific Library (gsl) for C++ program. 
 
