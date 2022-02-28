@@ -1,0 +1,5 @@
+useDynLib(BayesRB)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom("methods", "is")
+importFrom("stats", "runif", "uniroot")
