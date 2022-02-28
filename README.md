@@ -48,8 +48,21 @@ library(BayesRB)
 ## The genotype file
 The X matrix described above is the genotype file. It is an n rows x p columns matrix with N samples and P SNPs. For each SNP, the numbers of risk alleles are standardized as Norm(0,1).
 
+| X1    | X2     | X3     | X4     | X5     | X6     |
+|-------|--------|--------|--------|--------|--------|
+| 0.553 | 1.338  | -0.944 | -0.391 | -1.257 | -0.463 |
+| 0.553 | -0.072 | 0.766  | -0.391 | 0.129  | 1.935  |
+| 0.553 | -1.482 | -0.944 | -0.391 | -1.257 | -0.463 |
+| 0.553 | -0.072 | 0.766  | -1.845 | 0.129  | 1.935  |
+| 0.553 | -0.072 | 0.766  | -1.845 | 0.129  | 1.935  |
+| 0.553 | -0.072 | 0.766  | -0.391 | -1.257 | 1.935  |
+
 ## The phenotype file
 The Y matrix described above is the phenotype file. It's a vector with N elements, which indicate the disease status (0,1) of the N samples. 
+
+| V1 | V2 | V3 | V4 | V5 | V6 | V7 | V8 | V9 | V10 | V11 | V12 | V13 | V14 | V15 | V16 | V17 | V18 |
+|----|----|----|----|----|----|----|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 0  | 0  | 1  | 0  | 1  | 0  | 0  | 0  | 1  | 0   | 0   | 1   | 0   | 0   | 0   | 1   | 0   | 0   |
 
 # How to Run the Program
 The main functions in this package which implement the statistics described in Shan et al. (2022):
@@ -81,13 +94,13 @@ With the estimated parameters provided by BayesRB, PRS and probability of being 
 
 PRS:
 ```
-load("../data/result.Rdata")
+load("./data/result.Rdata")
 PRS = mean(result$r_mu) + x%*%apply(result$r_beta,2,mean)
 hist(PRS)
 ```
 The probability of being a case:
 ```
-load("../data/result.Rdata")
+load("./data/result.Rdata")
 prs_hat = apply(est_Z,1,ilogit)
 hist(prs_hat)
 ```
