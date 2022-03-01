@@ -25,13 +25,18 @@ library(devtools)
 4. Install the `BayesRB` R package from the github repository via this command:
 
 ```
-install_github("sylviashanboo/bayesRB")
+install_github("sylviashanboo/bayesRB", build_vignettes = TRUE)
 ```
 
-5. After the `BayesRB` R package has been installed, you can start use the package:
+5. After the `BayesRB` R package has been installed, you can start to use the package:
 
 ```
 library(BayesRB)
+```
+
+6. Run the following command for the details of how to use the package:
+```
+print(vignette("BayesRB-vignette",package="BayesRB"))
 ```
 
 # Data Format
@@ -72,6 +77,10 @@ The main functions in this package which implement the statistics described in S
 After installing the `BayesRB` R package, you can access BayesRB help page easily, which also contains example code.  
 ```
 library(BayesRB)
+print(vignette("BayesRB-vignette",package="BayesRB"))
+```
+OR
+```
 ?BayesRB
 ```
 
@@ -101,7 +110,7 @@ hist(PRS)
 The probability of being a case:
 ```
 library(faraway) #for ilogit function
-prs_hat = apply(est_Z,1,ilogit)
+prs_hat = apply(PRS,1,ilogit)
 hist(prs_hat)
 ```
 
