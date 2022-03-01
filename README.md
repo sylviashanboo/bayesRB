@@ -77,7 +77,7 @@ library(BayesRB)
 
 # Explanation of the Results
 
-##The output parameters
+## The output parameters
 The results from BayesRB function are the estimated parameters in each MCMC loop after burn-in and thin (valid MCMC loop):
 
 * r_beta: the estimated coefficients of all the SNPs in the valid MCMC loop. The matrix contains I rows and P columns, where I is the number of the valid MCMC loops, and P is the number of SNPs.
@@ -89,26 +89,26 @@ The results from BayesRB function are the estimated parameters in each MCMC loop
 * r_pi: the estimated mixture proportions pi1-pi4 in each valid MCMC loop. The matrix contains I rows and 4 columns, where I is the number of the valid MCMC loops.
 * r_m: the estimated SNPs being in the category 1-4 in each valid MCMC loop. The matrix contains I rows and 4 columns, where I is the number of the valid MCMC loops.
 
-##The calculation of PRS and probability of being a case
+## The calculation of PRS and probability of being a case
 With the estimated parameters provided by BayesRB, PRS and probability of being a case can be easily calculated:
 
 PRS:
 ```
-load("./data/result.Rdata")
+data(result)
 PRS = mean(result$r_mu) + x%*%apply(result$r_beta,2,mean)
 hist(PRS)
 ```
 The probability of being a case:
 ```
-load("./data/result.Rdata")
+library(faraway) #for ilogit function
 prs_hat = apply(est_Z,1,ilogit)
 hist(prs_hat)
 ```
 
-## Citation
+# Citation
 [Shan, Y., 2016. Statistical methods for genetic risk confidence intervals, Bayesian disease risk prediction, and estimating mutation screening saturation (Doctoral dissertation, University of Pittsburgh)](http://d-scholarship.pitt.edu/28629/).
 
-## Contact
+# Contact
 Ying Shan, PhD
 
 Clinical Research Academy, Peking University Shenzhen Hospital, Peking University, Shenzhen, China
