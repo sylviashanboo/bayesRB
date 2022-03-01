@@ -129,6 +129,7 @@ hist(PRS)
 ```
 The probability of being a case:
 ```
+library(faraway) #for ilogit function
 pro_hat = apply(PRS,1,ilogit)
 hist(pro_hat)
 ```
