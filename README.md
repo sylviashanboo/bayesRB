@@ -110,8 +110,8 @@ hist(PRS)
 The probability of being a case:
 ```
 library(faraway) #for ilogit function
-prs_hat = apply(PRS,1,ilogit)
-hist(prs_hat)
+pro_hat = apply(PRS,1,ilogit)
+hist(pro_hat)
 ```
 
 # Citation
