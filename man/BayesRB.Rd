@@ -107,9 +107,9 @@ PRS = mean(result$r_mu) + x\%*\%apply(result$r_beta,2,mean)
 hist(PRS)
 
 #calculate the probability of being a case:
-prs_hat = apply(PRS,1,ilogit) 
+pro_hat = apply(PRS,1,ilogit) 
 #the ilogit function is in faraway R package
-hist(prs_hat)
+hist(pro_hat)
 
 }
 
