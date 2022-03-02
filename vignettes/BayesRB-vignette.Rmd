@@ -122,13 +122,13 @@ The results from BayesRB function are the estimated parameters in each MCMC loop
 With the estimated parameters provided by BayesRB, PRS and probability of being a case can be easily calculated:
 
 PRS:
-```
+```{r}
 data("result", package = "BayesRB")
 PRS = mean(result$r_mu) + x%*%apply(result$r_beta,2,mean)
 hist(PRS)
 ```
 The probability of being a case:
-```
+```{r}
 library(faraway) #for ilogit function
 pro_hat = apply(PRS,1,ilogit)
 hist(pro_hat)
