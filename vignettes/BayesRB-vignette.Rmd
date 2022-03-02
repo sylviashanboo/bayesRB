@@ -133,6 +133,7 @@ library(faraway) #for ilogit function
 pro_hat = apply(PRS,1,ilogit)
 hist(pro_hat)
 ```
+
 # Citation
 Shan, Y., 2016. Statistical methods for genetic risk confidence intervals, Bayesian disease risk prediction, and estimating mutation screening saturation (Doctoral dissertation, University of Pittsburgh).
 
