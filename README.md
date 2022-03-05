@@ -115,7 +115,8 @@ hist(pro_hat)
 ```
 
 # Citation
-[Shan, Y., 2016. Statistical methods for genetic risk confidence intervals, Bayesian disease risk prediction, and estimating mutation screening saturation (Doctoral dissertation, University of Pittsburgh)](http://d-scholarship.pitt.edu/28629/).
+[Shan Y, Weeks D E. BayesRB: a markov chain Monte Carlo-based polygenic genetic risk score algorithm for dichotomous traits. bioRxiv, 2022, 2022.02.27.482193.](https://www.biorxiv.org/content/10.1101/2022.02.27.482193v1)
+
 
 # Contact
 Ying Shan, PhD
