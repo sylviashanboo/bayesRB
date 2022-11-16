@@ -7,10 +7,11 @@ BayesRB R package is written by Rcpp.
 
 The package is written in R language. To install, proceed as follows:
 
-1. Install the `devtools` package by starting up R and issuing this command:
+1. Install the `devtools` and `faraway` packages by starting up R and issuing this command:
 
 ```
 install.packages("devtools")
+install.packages("faraway")
 ```
 
 2. Load the `devtools` library to make its commands available:
@@ -22,10 +23,10 @@ library(devtools)
 3. Install the GSL. Here is the [instruction](https://gist.github.com/TysonRayJones/af7bedcdb8dc59868c7966232b4da903).
 
 
-4. Install the `BayesRB` R package from the github repository via this command:
+4. Install the `BayesRB` R package from the github repository(the `main` branch) via this command:
 
 ```
-install_github("sylviashanboo/bayesRB", build_vignettes = TRUE)
+install_github("sylviashanboo/bayesRB@main", build_vignettes = TRUE)
 ```
 
 5. After the `BayesRB` R package has been installed, you can start to use the package:
