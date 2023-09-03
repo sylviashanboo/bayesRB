@@ -7,6 +7,10 @@ BayesRB <- function(seed, MCMC_inte, burn_intee, thinn, X, Y, beta_initial) {
   .Call('BayesRB_BayesRB', PACKAGE = 'BayesRB',seed, MCMC_inte, burn_intee, thinn, X, Y, beta_initial)
 }
 
+BayesRB_OG <- function(seed, MCMC_inte, burn_intee, thinn, X, Y, beta_initial) {
+  .Call('BayesRB_BayesRB_OG', PACKAGE = 'BayesRB',seed, MCMC_inte, burn_intee, thinn, X, Y, beta_initial)
+}
+
 calcBaselineLOddsFromSample <-
 function(or,f,nog,p,sampGenotypes) {
 

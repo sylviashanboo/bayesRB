@@ -1,1 +1,3 @@
-PKG_LIBS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"``$(R_HOME)/bin/Rscript -e "RcppGSL:::LdFlags()"` `gsl-config --libs` `RcppGSL-config --libs`
+CXX_STD = CXX17
+PKG_LIBS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"` `gsl-config --libs` -fopenmp -lgomp
+PKG_CXXFLAGS= -fopenmp -I ../inst/include -march=native
